@@ -5,23 +5,18 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class CapsulasActivity extends AppCompatActivity {
-    private String ingredient;
-    private String quantity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_capsulas);
 
-        Bundle bundle = getIntent().getExtras();
-        ingredient = bundle.getString("Ingredient");
-        quantity = bundle.getString("Quantity");
+        Ingredient ingredient = getIntent().getParcelableExtra("Ingredient");
 
-
-        TextView ingredientText = (TextView) findViewById(R.id.activity_capsulas_ingredient);
+        TextView flavorText = (TextView) findViewById(R.id.activity_capsulas_flavor);
         TextView quantityText = (TextView) findViewById(R.id.activity_capsulas_quantity);
 
-        ingredientText.setText(ingredient);
-        quantityText.setText(quantity);
+        flavorText.setText(ingredient.getFlavor());
+        quantityText.setText(String.valueOf(ingredient.getQuantity()));
     }
 }

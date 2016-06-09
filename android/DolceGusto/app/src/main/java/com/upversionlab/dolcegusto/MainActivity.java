@@ -7,12 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String cappucinoIngredient = "Leite";
-    private static final String cappucinoQuantity = "100 ml";
-    private static final String lungoIngredient = "Lungo";
-    private static final String lungoQuantity = "120 ml";
-    private static final String espressoIngredient = "Espresso";
-    private static final String espressoQuantity = "20 ml";
+    private static final String CAPUCCINO_FLAVOR = "Leite";
+    private static final int CAPUCCINO_QUANTITY = 100;
+    private static final String LUNGO_FLAVOR = "Lungo";
+    private static final int LUNGO_QUANTITY = 120;
+    private static final String ESPRESSO_FLAVOR = "Espresso";
+    private static final int ESPRESSO_QUANTITY = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +24,12 @@ public class MainActivity extends AppCompatActivity {
             capuccinoButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    Ingredient ingredient = new Ingredient(CAPUCCINO_FLAVOR, CAPUCCINO_QUANTITY);
+                    // List<Ingredient> ingredientList = new ArrayList<Ingredient>();
+                    // ingredientList.add(ingredient);
+
                     Intent intent = new Intent(MainActivity.this, CapsulasActivity.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putString("Ingredient", cappucinoIngredient);
-                    bundle.putString("Quantity", cappucinoQuantity);
-                    intent.putExtras(bundle);
+                    intent.putExtra("Ingredient", ingredient);
                     startActivity(intent);
                 }
             });
@@ -39,11 +40,12 @@ public class MainActivity extends AppCompatActivity {
             lungoButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    Ingredient ingredient = new Ingredient(LUNGO_FLAVOR, LUNGO_QUANTITY);
+                    // List<Ingredient> ingredientList = new ArrayList<Ingredient>();
+                    // ingredientList.add(ingredient);
+
                     Intent intent = new Intent(MainActivity.this, CapsulasActivity.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putString("Ingredient", lungoIngredient);
-                    bundle.putString("Quantity", lungoQuantity);
-                    intent.putExtras(bundle);
+                    intent.putExtra("Ingredient", ingredient);
                     startActivity(intent);
                 }
             });
@@ -54,11 +56,12 @@ public class MainActivity extends AppCompatActivity {
             espressoButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    Ingredient ingredient = new Ingredient(ESPRESSO_FLAVOR, ESPRESSO_QUANTITY);
+                    // List<Ingredient> ingredientList = new ArrayList<Ingredient>();
+                    // ingredientList.add(ingredient);
+
                     Intent intent = new Intent(MainActivity.this, CapsulasActivity.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putString("Ingredient", espressoIngredient);
-                    bundle.putString("Quantity", espressoQuantity);
-                    intent.putExtras(bundle);
+                    intent.putExtra("Ingredient", ingredient);
                     startActivity(intent);
                 }
             });

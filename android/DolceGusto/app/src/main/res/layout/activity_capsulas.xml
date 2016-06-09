@@ -11,14 +11,24 @@
     tools:context="com.upversionlab.dolcegusto.CapsulasActivity">
 
     <TextView
-        android:id="@+id/activity_capsulas_ingredient"
+        android:id="@+id/activity_capsulas_ml"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text=" ml"/>/>
+
+    <TextView
+        android:id="@+id/activity_capsulas_flavor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:text="Test"/>
 
     <TextView
         android:id="@+id/activity_capsulas_quantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/activity_capsulas_ingredient"/>/>
+        android:layout_toLeftOf="@+id/activity_capsulas_ml"
+        android:text="200"/>/>
 
 </RelativeLayout>
