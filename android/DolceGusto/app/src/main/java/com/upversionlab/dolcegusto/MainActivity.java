@@ -7,12 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String CAPUCCINO_FLAVOR = "Leite";
-    private static final int CAPUCCINO_QUANTITY = 100;
-    private static final String LUNGO_FLAVOR = "Lungo";
-    private static final int LUNGO_QUANTITY = 120;
-    private static final String ESPRESSO_FLAVOR = "Espresso";
-    private static final int ESPRESSO_QUANTITY = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
             capuccinoButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Ingredient ingredient = new Ingredient(CAPUCCINO_FLAVOR, CAPUCCINO_QUANTITY);
+                    Ingredient ingredient = IngredientFactory.createIngredient(IngredientType.CAPPUCINO);
                     // List<Ingredient> ingredientList = new ArrayList<Ingredient>();
                     // ingredientList.add(ingredient);
 
                     Intent intent = new Intent(MainActivity.this, CapsulasActivity.class);
-                    intent.putExtra("Ingredient", ingredient);
+                    intent.putExtra(CapsulasActivity.INGREDIENT_EXTRA, ingredient);
                     startActivity(intent);
                 }
             });
@@ -40,12 +34,12 @@ public class MainActivity extends AppCompatActivity {
             lungoButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Ingredient ingredient = new Ingredient(LUNGO_FLAVOR, LUNGO_QUANTITY);
+                    Ingredient ingredient = IngredientFactory.createIngredient(IngredientType.LUNGO);
                     // List<Ingredient> ingredientList = new ArrayList<Ingredient>();
                     // ingredientList.add(ingredient);
 
                     Intent intent = new Intent(MainActivity.this, CapsulasActivity.class);
-                    intent.putExtra("Ingredient", ingredient);
+                    intent.putExtra(CapsulasActivity.INGREDIENT_EXTRA, ingredient);
                     startActivity(intent);
                 }
             });
@@ -56,12 +50,12 @@ public class MainActivity extends AppCompatActivity {
             espressoButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Ingredient ingredient = new Ingredient(ESPRESSO_FLAVOR, ESPRESSO_QUANTITY);
+                    Ingredient ingredient = IngredientFactory.createIngredient(IngredientType.ESPRESSO);
                     // List<Ingredient> ingredientList = new ArrayList<Ingredient>();
                     // ingredientList.add(ingredient);
 
                     Intent intent = new Intent(MainActivity.this, CapsulasActivity.class);
-                    intent.putExtra("Ingredient", ingredient);
+                    intent.putExtra(CapsulasActivity.INGREDIENT_EXTRA, ingredient);
                     startActivity(intent);
                 }
             });
