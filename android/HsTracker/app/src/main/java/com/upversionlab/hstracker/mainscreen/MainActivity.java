@@ -46,6 +46,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intentResult = new Intent();
         intentResult.putExtra(DECK_EXTRA, deck);
         setResult(RESULT_OK, intentResult);
-        finish();
     }
 }
