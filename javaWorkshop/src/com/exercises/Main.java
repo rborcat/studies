@@ -1,6 +1,4 @@
-package com.company;
-
-import com.exercises.Exercises;
+package com.exercises;
 
 public class Main {
 
@@ -15,7 +13,7 @@ public class Main {
         // Exercises.newMathematicalFunctions();
 
         // Chapter 8.4
-        Exercises.collections();
+        // Exercises.collections();
 
         // Chapter 8.5
         // Exercises.workingWithFiles();
