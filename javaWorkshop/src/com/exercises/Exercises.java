@@ -1,7 +1,9 @@
 package com.exercises;
 
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 import java.util.stream.Collectors;
@@ -130,6 +132,22 @@ public final class Exercises {
         //UnaryOperator<String> masterMode = p -> "Master Javeiro " + p;
         //javaDevelopers.replaceAll(masterMode);
         //System.out.println(javaDevelopers);
+
+        lineBreaker();
+
+        Map<Integer, String> ossStackPeople = new HashMap<>();
+        ossStackPeople.put(1, "Rodrigo");
+        ossStackPeople.put(2, "Denis");
+        ossStackPeople.put(3, "Carlos");
+        ossStackPeople.put(4, "Luciano");
+
+        ossStackPeople.forEach((key, value) -> System.out.println("Id: " + key + " Name: " + value));
+        ossStackPeople.replace(3, "Vinicius");
+        System.out.println(ossStackPeople.get(3));
+
+        lineBreaker();
+
+
 
     }
 
