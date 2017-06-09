@@ -1,11 +1,15 @@
 package com.exercises;
 
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.*;
 import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -153,6 +157,37 @@ public final class Exercises {
 
     public static void workingWithFiles() {
         chapter("8.5");
+
+        String fileName = "cities.txt";
+        try {
+            Stream<String> citiesFile = Files.lines(Paths.get(fileName));
+            citiesFile.forEach(System.out::println);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        lineBreaker();
+
+        try {
+            Files.walk(Paths.get("."))
+                    .filter(p -> p.toString().endsWith(".iml"))
+                    .forEach(System.out::println);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        lineBreaker();
+
+        Base64.Encoder encoder = Base64.getEncoder();
+        String normalString = "top secret";
+        String encodedString = encoder.encodeToString(
+                normalString.getBytes(StandardCharsets.UTF_8) );
+
+        System.out.println(encodedString);
+
+        Base64.Decoder decoder = Base64.getDecoder();
+        byte[] decodedByteArray = decoder.decode(encodedString);
+        System.out.println(new String(decodedByteArray));
     }
 
     public static void annotations() {
@@ -161,6 +196,28 @@ public final class Exercises {
 
     public static void minorChanges() {
         chapter("8.7");
+
+        String text = "Java 8 is greater than Java 7 ," +
+                      "we can assume that Java 9 will be better!";
+
+        String patternString1 = "(Java) (.+?)";
+
+        Pattern pattern = Pattern.compile(patternString1);
+        Matcher matcher = pattern.matcher(text);
+
+        while(matcher.find()) {
+            System.out.println("found: " + matcher.group(1) + " " + matcher.group(2));
+        }
+
+        lineBreaker();
+
+        String grepSortJava = Pattern.compile(":")
+                .splitAsStream("JavaScript:Java:C++:Erlang")
+                .filter(s -> s.contains("Java"))
+                .sorted()
+                .collect(Collectors.joining(":"));
+        System.out.println(grepSortJava);
+
     }
 
     private static void lineBreaker() {
