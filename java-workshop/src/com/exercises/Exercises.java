@@ -80,7 +80,7 @@ public final class Exercises {
         System.out.println("x+y: " + Integer.toUnsignedString(x + y));
         System.out.println("parse(\"2147483647\"): " + Integer.parseUnsignedInt("2147483647"));
         System.out.println("parse(\"2147483648\"): " + Integer.parseUnsignedInt("2147483648"));
-        //System.out.println("parse(\"-2147483648\"): " + Integer.parseUnsignedInt("-2147483648"));
+        // System.out.println("parse(\"-2147483648\"): " + Integer.parseUnsignedInt("-2147483648"));
     }
 
     public static void newMathematicalFunctions() {
@@ -108,6 +108,9 @@ public final class Exercises {
         System.out.println("-15 mod 2 = " + Math.floorMod(-15 , 2) );
         System.out.println("-16 mod 2 = " + Math.floorMod(-16 , 2) );
         System.out.println("-15 mod -2 = " + Math.floorMod(-15 , -2) );
+        System.out.println("-15 mod 2 = " + -15 % 2 );
+        System.out.println("-16 mod 2 = " + -16 % 2 );
+        System.out.println("-15 mod -2 = " + -15 % -2 );
     }
 
     public static void collections() {
@@ -133,9 +136,9 @@ public final class Exercises {
         javaDevelopers.sort(sortComparator);
         System.out.println(javaDevelopers);
 
-        //UnaryOperator<String> masterMode = p -> "Master Javeiro " + p;
-        //javaDevelopers.replaceAll(masterMode);
-        //System.out.println(javaDevelopers);
+        UnaryOperator<String> masterMode = p -> "Master Javeiro " + p;
+        javaDevelopers.replaceAll(masterMode);
+        System.out.println(javaDevelopers);
 
         lineBreaker();
 
@@ -148,11 +151,6 @@ public final class Exercises {
         ossStackPeople.forEach((key, value) -> System.out.println("Id: " + key + " Name: " + value));
         ossStackPeople.replace(3, "Vinicius");
         System.out.println(ossStackPeople.get(3));
-
-        lineBreaker();
-
-
-
     }
 
     public static void workingWithFiles() {
@@ -200,13 +198,13 @@ public final class Exercises {
         String text = "Java 8 is greater than Java 7 ," +
                       "we can assume that Java 9 will be better!";
 
-        String patternString1 = "(Java) (.+?)";
+        String patternString1 = "(Java) (.)";
 
         Pattern pattern = Pattern.compile(patternString1);
         Matcher matcher = pattern.matcher(text);
 
         while(matcher.find()) {
-            System.out.println("found: " + matcher.group(1) + " " + matcher.group(2));
+            System.out.println("found: " + matcher.group(0) + " - " + matcher.group(1) );
         }
 
         lineBreaker();
