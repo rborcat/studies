@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
         // Chapter 8.1
-        // Exercises.stringJoin();
+         Exercises.stringJoin();
 
         // Chapter 8.2
         // Exercises.numberClasses();
@@ -30,32 +30,6 @@ public class Main {
 
         // Chapter 8.7
         // Exercises.minorChanges();
-
-        try (Socket s = new Socket()) {
-            s.setSoTimeout(100);
-            s.connect(new InetSocketAddress("time-a.nist.gov", 13));
-
-            try (Scanner input = new Scanner(s.getInputStream())) {
-                while (input.hasNextLine()) {
-                    System.out.println(input.nextLine());
-                }
-            }
-
-            InetAddress[] addresses = InetAddress.getAllByName("google.com");
-            InetAddress address = InetAddress.getByName("google.com");
-            address.getAddress();
-
-            address.isSiteLocalAddress();
-
-            System.out.println(InetAddress.getLocalHost());
-            System.out.println(InetAddress.getLoopbackAddress());
-
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
 
     }
 }
