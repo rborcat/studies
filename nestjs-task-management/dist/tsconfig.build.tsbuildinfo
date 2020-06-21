@@ -1147,7 +1147,7 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.controller.ts": {
-        "version": "0316e3b90823885dc9d51a446c6565691d1f0e10edd27195991c6cc5c9391ee3",
+        "version": "0270e2dedd695e2052bbe06a9520868994a607a8c13d16038e96ae9cfb0cdbd0",
         "signature": "c8f245274884fdfd890bda5995b1af1b6a0876b51e2b56bfadd8e5d4f62af25d",
         "affectsGlobalScope": false
       },
@@ -5082,7 +5082,6 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../src/tasks/task.model.ts",
-        "../src/tasks/tasks.module.ts",
         "../src/tasks/tasks.service.ts"
       ],
       "../src/tasks/tasks.module.ts": [
