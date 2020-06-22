@@ -26,8 +26,10 @@ export class TasksController {
         return this.tasksService.createTask(title, description);
     }
 
-    @Delete()
-    deleteTask() {
-        
+    @Delete(':id')
+    deleteTask(
+        @Param('id') id:string
+    ) {
+        this.tasksService.deleteTask(id);
     }
 }
