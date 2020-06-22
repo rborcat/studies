@@ -22,8 +22,13 @@ let TasksController = class TasksController {
     getAllTasks() {
         return this.tasksService.getAllTasks();
     }
+    getTaskById(id) {
+        return this.tasksService.getTaskById(id);
+    }
     createTask(title, description) {
         return this.tasksService.createTask(title, description);
+    }
+    deleteTask() {
     }
 };
 __decorate([
@@ -33,6 +38,13 @@ __decorate([
     __metadata("design:returntype", Array)
 ], TasksController.prototype, "getAllTasks", null);
 __decorate([
+    common_1.Get(':id'),
+    __param(0, common_1.Param('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Object)
+], TasksController.prototype, "getTaskById", null);
+__decorate([
     common_1.Post(),
     __param(0, common_1.Body('title')),
     __param(1, common_1.Body('description')),
@@ -40,6 +52,12 @@ __decorate([
     __metadata("design:paramtypes", [String, String]),
     __metadata("design:returntype", void 0)
 ], TasksController.prototype, "createTask", null);
+__decorate([
+    common_1.Delete(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], TasksController.prototype, "deleteTask", null);
 TasksController = __decorate([
     common_1.Controller('tasks'),
     __metadata("design:paramtypes", [tasks_service_1.TasksService])
