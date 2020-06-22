@@ -29,7 +29,7 @@ export class TasksController {
     @Delete(':id')
     deleteTask(
         @Param('id') id:string
-    ) {
-        this.tasksService.deleteTask(id);
+    ): Task {
+        return this.tasksService.deleteTask(id);
     }
 }

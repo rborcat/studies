@@ -27,7 +27,9 @@ export class TasksService {
     }
 
     deleteTask(id: string) {
-        var that = this;
+        const that = this;
+        const ret = that.getTaskById(id);
         this.tasks = this.tasks.filter(function(task){return task != that.getTaskById(id)});
+        return ret;
     }
 }

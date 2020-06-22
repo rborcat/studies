@@ -31,8 +31,10 @@ let TasksService = class TasksService {
         return task;
     }
     deleteTask(id) {
-        var that = this;
+        const that = this;
+        const ret = that.getTaskById(id);
         this.tasks = this.tasks.filter(function (task) { return task != that.getTaskById(id); });
+        return ret;
     }
 };
 TasksService = __decorate([

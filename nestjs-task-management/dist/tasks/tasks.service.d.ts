@@ -4,5 +4,5 @@ export declare class TasksService {
     getAllTasks(): Task[];
     getTaskById(id: string): Task;
     createTask(title: string, description: string): Task;
-    deleteTask(id: string): void;
+    deleteTask(id: string): Task;
 }
