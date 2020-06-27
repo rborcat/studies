@@ -1146,14 +1146,19 @@
         "signature": "6b635da36a7f1556ad7114d34fb6d00a234755aa17a614e316875d615fa9a441",
         "affectsGlobalScope": false
       },
+      "../src/tasks/dto/get-tasks-filter.dto.ts": {
+        "version": "2ce16ca2ca37c7ebc76f14ce06f730764222f6e423af9babeff6fe04e01c1081",
+        "signature": "1f3ead3ace0eb78dd01b113bee3196d38331b87bde8ce6f64fb5ea4d9c909c17",
+        "affectsGlobalScope": false
+      },
       "../src/tasks/tasks.service.ts": {
-        "version": "9d5e2b7866875afcdd45d9ca4f127d54a3a472a322c415aae7893f6dfc645bb8",
-        "signature": "c73e159e7b817ac5a66c7d49004b334186bc126a6f65dc518e68cf2510a3e4d1",
+        "version": "02ad3ea6f5ceb7bb73fa308db9d868244b886c5b7b8db5402e533a03f893537b",
+        "signature": "52d07d5e15aa4761b26c016f1debb0dd36789d18ea29274596b7330f813a7986",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.controller.ts": {
-        "version": "1cba88c768b976b1d6d280d54a46b109ac6f213a85644d0b380ce1d0a90b1c3f",
-        "signature": "4c45db2c9fe94f08de56602acf81db1fe259d8647ff79c7bd06129ae75d80219",
+        "version": "a79ecdfaf32464598cc52a3906e5d5efe4db5e0dc6cb2ef27f715dbb716505be",
+        "signature": "229e58184f457fb65aa84d4aabc5cd72407dd6ae648a96ed5b567543d4eef83e",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.module.ts": {
@@ -5079,6 +5084,14 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../src/tasks/dto/get-tasks-filter.dto.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/tasks/task.model.ts"
+      ],
       "../src/tasks/task.model.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -5094,6 +5107,7 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../src/tasks/dto/create-task.dto.ts",
+        "../src/tasks/dto/get-tasks-filter.dto.ts",
         "../src/tasks/task.model.ts",
         "../src/tasks/tasks.service.ts"
       ],
@@ -5115,6 +5129,7 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../src/tasks/dto/create-task.dto.ts",
+        "../src/tasks/dto/get-tasks-filter.dto.ts",
         "../src/tasks/task.model.ts"
       ]
     },
@@ -8327,13 +8342,18 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../src/tasks/dto/get-tasks-filter.dto.ts": [
+        "../src/tasks/task.model.ts"
+      ],
       "../src/tasks/tasks.controller.ts": [
         "../src/tasks/dto/create-task.dto.ts",
+        "../src/tasks/dto/get-tasks-filter.dto.ts",
         "../src/tasks/task.model.ts",
         "../src/tasks/tasks.service.ts"
       ],
       "../src/tasks/tasks.service.ts": [
         "../src/tasks/dto/create-task.dto.ts",
+        "../src/tasks/dto/get-tasks-filter.dto.ts",
         "../src/tasks/task.model.ts"
       ]
     },
@@ -8700,6 +8720,7 @@
       "../src/app.module.ts",
       "../src/main.ts",
       "../src/tasks/dto/create-task.dto.ts",
+      "../src/tasks/dto/get-tasks-filter.dto.ts",
       "../src/tasks/task.model.ts",
       "../src/tasks/tasks.controller.ts",
       "../src/tasks/tasks.module.ts",
