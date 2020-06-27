@@ -20,7 +20,8 @@ let TasksService = class TasksService {
     getTaskById(id) {
         return this.tasks.find(task => task.id === id);
     }
-    createTask(title, description) {
+    createTask(createTaskDTO) {
+        const { title, description } = createTaskDTO;
         const task = {
             id: uuid_1.v1(),
             title,
@@ -31,10 +32,12 @@ let TasksService = class TasksService {
         return task;
     }
     deleteTask(id) {
-        const that = this;
-        const ret = that.getTaskById(id);
-        this.tasks = this.tasks.filter(function (task) { return task != that.getTaskById(id); });
-        return ret;
+        this.tasks = this.tasks.filter(task => task.id !== id);
+    }
+    updateTaskStatus(id, status) {
+        const task = this.getTaskById(id);
+        task.status = status;
+        return task;
     }
 };
 TasksService = __decorate([

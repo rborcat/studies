@@ -1141,14 +1141,19 @@
         "signature": "1f1972745fd56e4323782ccdc86730f1ae6b07fc29012c7c2a2872104f6d6fca",
         "affectsGlobalScope": false
       },
+      "../src/tasks/dto/create-task.dto.ts": {
+        "version": "df60fc25dfd5de26906af64a7220140dc885497bda6f170c2fb55ed6d44c6328",
+        "signature": "6b635da36a7f1556ad7114d34fb6d00a234755aa17a614e316875d615fa9a441",
+        "affectsGlobalScope": false
+      },
       "../src/tasks/tasks.service.ts": {
-        "version": "07c05bff7d8793a0ccb2bc1385affd9212af3a1fbf1cd93dea529e624e3ba2f5",
-        "signature": "460532fe8a5c17b59d371f0546ad92a0633fa7e817e56255cc4b6ae83e401cd3",
+        "version": "9d5e2b7866875afcdd45d9ca4f127d54a3a472a322c415aae7893f6dfc645bb8",
+        "signature": "c73e159e7b817ac5a66c7d49004b334186bc126a6f65dc518e68cf2510a3e4d1",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.controller.ts": {
-        "version": "bd4aee955be1be829bd039fae08cdf330e8d73844479781f26ad5ded3813d5b3",
-        "signature": "78a12d5ed2a4ddcc6ceb02d645f8b39a5f1676b6d1d464dc4a2df31501761c27",
+        "version": "1cba88c768b976b1d6d280d54a46b109ac6f213a85644d0b380ce1d0a90b1c3f",
+        "signature": "4c45db2c9fe94f08de56602acf81db1fe259d8647ff79c7bd06129ae75d80219",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.module.ts": {
@@ -5067,6 +5072,13 @@
         "../node_modules/@types/node/util.d.ts",
         "../src/app.module.ts"
       ],
+      "../src/tasks/dto/create-task.dto.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../src/tasks/task.model.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -5081,6 +5093,7 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
+        "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/task.model.ts",
         "../src/tasks/tasks.service.ts"
       ],
@@ -5101,6 +5114,7 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
+        "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/task.model.ts"
       ]
     },
@@ -8314,10 +8328,12 @@
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/tasks/tasks.controller.ts": [
+        "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/task.model.ts",
         "../src/tasks/tasks.service.ts"
       ],
       "../src/tasks/tasks.service.ts": [
+        "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/task.model.ts"
       ]
     },
@@ -8683,6 +8699,7 @@
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../src/app.module.ts",
       "../src/main.ts",
+      "../src/tasks/dto/create-task.dto.ts",
       "../src/tasks/task.model.ts",
       "../src/tasks/tasks.controller.ts",
       "../src/tasks/tasks.module.ts",
