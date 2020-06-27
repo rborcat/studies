@@ -19,10 +19,10 @@ export class TasksController {
     }
 
     @Post()
-    createTask(
+    async createTask(
         @Body('title') title: string,
         @Body('description') description: string,
-    ) {
+    ): Promise<Task>{
         return this.tasksService.createTask(title, description);
     }
 

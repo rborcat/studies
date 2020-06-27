@@ -25,7 +25,7 @@ let TasksController = class TasksController {
     getTaskById(id) {
         return this.tasksService.getTaskById(id);
     }
-    createTask(title, description) {
+    async createTask(title, description) {
         return this.tasksService.createTask(title, description);
     }
     deleteTask(id) {
@@ -51,7 +51,7 @@ __decorate([
     __param(1, common_1.Body('description')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String, String]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], TasksController.prototype, "createTask", null);
 __decorate([
     common_1.Delete(':id'),

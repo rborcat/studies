@@ -1147,8 +1147,8 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.controller.ts": {
-        "version": "c4c412280ac65ad0190035bcfc2809b14dc56c703da6765c914bb96cc6bbc351",
-        "signature": "2f7ac1a8283f61a3a09961774cc1a1cda220d374fbc01152b95855ce65e7f6f1",
+        "version": "bd4aee955be1be829bd039fae08cdf330e8d73844479781f26ad5ded3813d5b3",
+        "signature": "78a12d5ed2a4ddcc6ceb02d645f8b39a5f1676b6d1d464dc4a2df31501761c27",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.module.ts": {
