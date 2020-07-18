@@ -1752,8 +1752,8 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/dto/create-task.dto.ts": {
-        "version": "c8adbf2f7e3beea1093a0df17128c370dc6ed2a22b1cc5364913cf3d32e94593",
-        "signature": "6b635da36a7f1556ad7114d34fb6d00a234755aa17a614e316875d615fa9a441",
+        "version": "4bbb1cfc49405e3500ff8cac383febd619d1c12ee9407aa911e58e2d52ef8579",
+        "signature": "b1d26f03607e121c7317f85d8725d2562ea98694c85f768a3db85be2488756e3",
         "affectsGlobalScope": false
       },
       "../src/tasks/task-status.enum.ts": {
@@ -1762,8 +1762,8 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/dto/get-tasks-filter.dto.ts": {
-        "version": "571a7227675539a715a2136500905e98ceebee4fa9944d94fc282709d9ca3f94",
-        "signature": "4cedac25453dd28d5bbfe5522dcde2e871055da6623d2adfc14c3173cf366187",
+        "version": "02e7117ff24b9cfcc398ac847b1512595b1787549544ffc5992970cd7f75a9b9",
+        "signature": "2ac9fa4a7af627b5262af8b5ffa2322c1a53895cd18c5a0707d89be2a7945621",
         "affectsGlobalScope": false
       },
       "../node_modules/typeorm/schema-builder/options/tablecolumnoptions.d.ts": {
@@ -3032,8 +3032,8 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/task.repository.ts": {
-        "version": "d86a54a799b1612a96c0b5ebe782566bdc305e48a7b3a71791c841614a7fab26",
-        "signature": "2a565e7c78afda5a21eb4411837a7bbf488363222de2714d8e6f0a43abbc903a",
+        "version": "74c828a0cdd0e5f69885ca37bc56842fdf44579ed2fbc4a43e2912a619498356",
+        "signature": "674b59e72987720b322fe5bb32f9406c0812c04d4cc96935eca84a0feaf28c14",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/typeorm/dist/interfaces/entity-class-or-schema.type.d.ts": {
@@ -3082,8 +3082,8 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.service.ts": {
-        "version": "ab11083b1e440483e27d1d7a59bf13b31a68d65e013a31f7afd5766f25819a09",
-        "signature": "e7cc0a6c4611afad9348c6f53dfc8b078a1d7dfcd84aebffa7ac10463d6c422e",
+        "version": "4a487ebc453f5ca086e34a7d1752a77bf6efa19fe3d8ca35468fc36e6fb0f987",
+        "signature": "3c088e49b6d252535e6f941e9adf9dc6fe27c8ddba8ab4770bc16ea43b88c236",
         "affectsGlobalScope": false
       },
       "../src/tasks/pipes/task-status-validation.pipe.ts": {
@@ -3092,8 +3092,8 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.controller.ts": {
-        "version": "ea78775a3ac2c2f7d5f0b40e92f048c9da9bc314daca12683cbfc58671836fa4",
-        "signature": "04efdba6d31b5e24b21d4e6d4618aef0a7a5e7eb2e8e78706f8e73e2958eabda",
+        "version": "6f0c51ecbebd12ac721fb2a9ccec55e38e3db0b2cdcfaa6aae47e8ad5739a543",
+        "signature": "e8144811a56e3cdbf5710c137da287108e5e372b8666ffea57a5df586c970f95",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.module.ts": {
@@ -3106,8 +3106,38 @@
         "signature": "e48d1e836452920a823efe3c1f15dbaa531cbb2c536b3d47ad06ed5201a8b847",
         "affectsGlobalScope": false
       },
+      "../src/auth/dto/auth-credentials.dto.ts": {
+        "version": "b7b8b04ee8bb499ca1e3775e72dcadbc8ef2ebab0ffa796ab2873188d60eba7e",
+        "signature": "89c5c2702aa67d1e0649595ee1158802a670f851bc20f1718f45e1b3d1fb8bad",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/user.entity.ts": {
+        "version": "3ed80e7e3c21d6926bd2d32214fc326b380e4866e1c33674bba6e5ebac883186",
+        "signature": "c954094fcc939529bd954e366fb8e69b3c5cbe5a07f80666938f4e0d69da7325",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/user.repository.ts": {
+        "version": "a08c8e0c5178cc9d524264b330d889556f4582150bd0bf2daa8691d95d567884",
+        "signature": "b590a6e0911bb31bcabcf6f29ab4370f7ab1cd00a7caf3a5bd42836fff277dcc",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/auth.service.ts": {
+        "version": "e210725f97dc65b044eea4a7b251750fd23151d28e2cc1867c37fc49aedf2d6c",
+        "signature": "20613ba3eddbc1307aee4794514bfd754f6c7f50e0a95171c96f6b43216763cf",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/auth.controller.ts": {
+        "version": "2af7e4244521d0316f3acfca113d08789a828edc15dbe6a331a04f7f950884d1",
+        "signature": "33ced92e57cddd7d3d208ec4bfc80a82afdacfc184158384f1c889ef797e1eb9",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/auth.module.ts": {
+        "version": "8c087e214bbc3cf410fca893dcffe2c6a74817c08be1ad8e329aae10f98e9d5f",
+        "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "e61847cb893e573c6b5ec63c64d4cc73625728e635870b870a6337b17e704a55",
+        "version": "3b8e8962e1fb81a8275fdcda59af57405437cc9825985a21370b58f55335fc2a",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -10698,8 +10728,69 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
+        "../src/auth/auth.module.ts",
         "../src/config/typeorm.config.ts",
         "../src/tasks/tasks.module.ts"
+      ],
+      "../src/auth/auth.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/auth/auth.service.ts",
+        "../src/auth/dto/auth-credentials.dto.ts"
+      ],
+      "../src/auth/auth.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/auth/auth.controller.ts",
+        "../src/auth/auth.service.ts",
+        "../src/auth/user.repository.ts"
+      ],
+      "../src/auth/auth.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/auth/dto/auth-credentials.dto.ts",
+        "../src/auth/user.repository.ts"
+      ],
+      "../src/auth/dto/auth-credentials.dto.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/class-validator/types/index.d.ts"
+      ],
+      "../src/auth/user.entity.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/auth/user.repository.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/auth/dto/auth-credentials.dto.ts",
+        "../src/auth/user.entity.ts"
       ],
       "../src/config/typeorm.config.ts": [
         "../node_modules/@nestjs/typeorm/index.d.ts",
@@ -17713,6 +17804,22 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../src/auth/auth.controller.ts": [
+        "../src/auth/auth.service.ts",
+        "../src/auth/dto/auth-credentials.dto.ts"
+      ],
+      "../src/auth/auth.service.ts": [
+        "../src/auth/dto/auth-credentials.dto.ts",
+        "../src/auth/user.repository.ts"
+      ],
+      "../src/auth/user.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/auth/user.repository.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/auth/dto/auth-credentials.dto.ts",
+        "../src/auth/user.entity.ts"
+      ],
       "../src/config/typeorm.config.ts": [
         "../node_modules/@nestjs/typeorm/index.d.ts"
       ],
@@ -18493,6 +18600,12 @@
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../src/app.module.ts",
+      "../src/auth/auth.controller.ts",
+      "../src/auth/auth.module.ts",
+      "../src/auth/auth.service.ts",
+      "../src/auth/dto/auth-credentials.dto.ts",
+      "../src/auth/user.entity.ts",
+      "../src/auth/user.repository.ts",
       "../src/config/typeorm.config.ts",
       "../src/main.ts",
       "../src/tasks/dto/create-task.dto.ts",

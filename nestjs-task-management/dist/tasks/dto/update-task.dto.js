@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UpdateTaskDTO = void 0;
-class UpdateTaskDTO {
+exports.UpdateTaskDto = void 0;
+class UpdateTaskDto {
 }
-exports.UpdateTaskDTO = UpdateTaskDTO;
+exports.UpdateTaskDto = UpdateTaskDto;
 //# sourceMappingURL=update-task.dto.js.map

@@ -9,20 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.GetTasksFilterDto = void 0;
-const class_validator_1 = require("class-validator");
-const task_status_enum_1 = require("../task-status.enum");
-class GetTasksFilterDto {
-}
+exports.User = void 0;
+const typeorm_1 = require("typeorm");
+let User = class User extends typeorm_1.BaseEntity {
+};
 __decorate([
-    class_validator_1.IsOptional(),
-    class_validator_1.IsIn([task_status_enum_1.TaskStatus.OPEN, task_status_enum_1.TaskStatus.IN_PROGRESS, task_status_enum_1.TaskStatus.DONE]),
-    __metadata("design:type", String)
-], GetTasksFilterDto.prototype, "status", void 0);
+    typeorm_1.PrimaryGeneratedColumn(),
+    __metadata("design:type", Number)
+], User.prototype, "id", void 0);
 __decorate([
-    class_validator_1.IsOptional(),
-    class_validator_1.IsNotEmpty(),
+    typeorm_1.Column(),
     __metadata("design:type", String)
-], GetTasksFilterDto.prototype, "search", void 0);
-exports.GetTasksFilterDto = GetTasksFilterDto;
-//# sourceMappingURL=get-tasks-filter.dto.js.map
+], User.prototype, "username", void 0);
+__decorate([
+    typeorm_1.Column(),
+    __metadata("design:type", String)
+], User.prototype, "password", void 0);
+User = __decorate([
+    typeorm_1.Entity(),
+    typeorm_1.Unique(['username'])
+], User);
+exports.User = User;
+//# sourceMappingURL=user.entity.js.map

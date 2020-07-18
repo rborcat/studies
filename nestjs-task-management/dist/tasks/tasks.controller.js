@@ -23,14 +23,14 @@ let TasksController = class TasksController {
     constructor(tasksService) {
         this.tasksService = tasksService;
     }
-    getTasks(filterDTO) {
-        return this.tasksService.getTasks(filterDTO);
+    getTasks(filterDto) {
+        return this.tasksService.getTasks(filterDto);
     }
     getTaskById(id) {
         return this.tasksService.getTaskById(id);
     }
-    createTask(createTaskDTO) {
-        return this.tasksService.createTask(createTaskDTO);
+    createTask(createTaskDto) {
+        return this.tasksService.createTask(createTaskDto);
     }
     deleteTask(id) {
         return this.tasksService.deleteTask(id);
@@ -43,7 +43,7 @@ __decorate([
     common_1.Get(),
     __param(0, common_1.Query(common_1.ValidationPipe)),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [get_tasks_filter_dto_1.GetTasksFilterDTO]),
+    __metadata("design:paramtypes", [get_tasks_filter_dto_1.GetTasksFilterDto]),
     __metadata("design:returntype", Promise)
 ], TasksController.prototype, "getTasks", null);
 __decorate([
@@ -58,7 +58,7 @@ __decorate([
     common_1.UsePipes(common_1.ValidationPipe),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [create_task_dto_1.CreateTaskDTO]),
+    __metadata("design:paramtypes", [create_task_dto_1.CreateTaskDto]),
     __metadata("design:returntype", Promise)
 ], TasksController.prototype, "createTask", null);
 __decorate([

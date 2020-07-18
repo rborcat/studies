@@ -11,8 +11,8 @@ const task_entity_1 = require("./task.entity");
 const typeorm_1 = require("typeorm");
 const task_status_enum_1 = require("./task-status.enum");
 let TaskRepository = class TaskRepository extends typeorm_1.Repository {
-    async getTasks(filterDTO) {
-        const { status, search } = filterDTO;
+    async getTasks(filterDto) {
+        const { status, search } = filterDto;
         const query = this.createQueryBuilder('task');
         if (status) {
             query.andWhere('task.status = :status', { status });
@@ -23,8 +23,8 @@ let TaskRepository = class TaskRepository extends typeorm_1.Repository {
         const tasks = await query.getMany();
         return tasks;
     }
-    async createTask(createTaskDTO) {
-        const { title, description } = createTaskDTO;
+    async createTask(createTaskDto) {
+        const { title, description } = createTaskDto;
         const task = new task_entity_1.Task();
         task.title = title;
         task.description = description;

@@ -20,8 +20,8 @@ let TasksService = class TasksService {
     constructor(taskRepository) {
         this.taskRepository = taskRepository;
     }
-    async getTasks(filterDTO) {
-        return this.taskRepository.getTasks(filterDTO);
+    async getTasks(filterDto) {
+        return this.taskRepository.getTasks(filterDto);
     }
     async getTaskById(id) {
         const found = await this.taskRepository.findOne(id);
@@ -30,8 +30,8 @@ let TasksService = class TasksService {
         }
         return found;
     }
-    async createTask(createTaskDTO) {
-        return this.taskRepository.createTask(createTaskDTO);
+    async createTask(createTaskDto) {
+        return this.taskRepository.createTask(createTaskDto);
     }
     async deleteTask(id) {
         const result = await this.taskRepository.delete(id);
