@@ -1,15 +1,18 @@
 import { Repository, EntityRepository } from "typeorm";
-import { ConflictException, InternalServerErrorException } from "@nestjs/common";
+import { ConflictException, InternalServerErrorException, Logger } from "@nestjs/common";
 import * as bcrypt from 'bcrypt';
 import { User } from "./user.entity";
 import { AuthCredentialsDto } from "./dto/auth-credentials.dto";
 
 @EntityRepository(User)
 export class UserRepository extends Repository<User> {
+    private logger = new Logger('UserRepository');
+
     async signUp(authCredentialsDto: AuthCredentialsDto): Promise<void> {
         const { username, password } = authCredentialsDto;
         const DUPLICATED_USER_NAME_CODE = '23505';
 
+        this.logger.verbose(`Creating user: ${username}`);
         const user = new User();
         user.username = username;
         user.salt = await bcrypt.genSalt();;
@@ -17,8 +20,10 @@ export class UserRepository extends Repository<User> {
 
         try {
             await user.save();
+            this.logger.verbose(`User created: ${username}`);
         } catch (error) {
             if (error.code === DUPLICATED_USER_NAME_CODE) {
+                this.logger.verbose(`Failed to create user: ${username} - user already exists`);
                 throw new ConflictException('Username already exists');
             } else {
                 throw new InternalServerErrorException();
